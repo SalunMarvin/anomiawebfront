@@ -17,7 +17,7 @@ export default class Anomia extends Component {
 
   renderCard = () => {
     return (
-      <AnomiaCard title={this.anomiaController.card.title} icon={this.anomiaController.card.icon} color={this.anomiaController.card.color} />
+      <AnomiaCard title={this.anomiaController.card.title} icon={this.anomiaController.card.icon} color={this.anomiaController.card.color} score={this.anomiaController.score} />
     )
   }
 

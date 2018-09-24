@@ -29,10 +29,16 @@ export class AnomiaCard extends React.Component {
     this.anomiaController.getNewCard();
   }
 
+  scorePoint = () => {
+    this.anomiaController.score++;
+  }
+
   render() {
     return (
       <section className='wrapper' onClick={this.changeCard}>
+        
         <div className='cardBackground'>
+        {/* <div className="scoreButton" onClick={this.scorePoint}>{this.props.score}</div>   */}
           <div className='title'>{this.props.title}</div>
           <div className='suit' style={{ color: this.props.color }} ><i className={"fa fa-" + this.props.icon} ></i></div>
           <div className='backwardsTitle'>{this.props.title}</div>
